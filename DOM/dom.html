@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: gray;
+            color: white;
+        }
+        div{
+            padding: 30px;
+        }
+    </style>
+</head>
+<body id="princial">
+    <div>
+        <h1>aprendendo DOM  </h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus nihil commodi eaque temporibus repellat quisquam magnam dolorem, nam nemo animi tempore quaerat earum numquam atque id iure maxime cumque eius.</p>
+        <p>Esse site foi criado para explicar o que é a árvore dom</p>
+        <img src="arvore_dom.png"  width="500" alt="" srcset="">
+        <p>toda árvore dom começa pelo window, essa sendo a janela do site</p>
+        <p>dentro dessa window temos acesso a várias coisas, a mais importante dela no momento sendo o document, que dá acesso ao html</p>
+        <p>a árvore dom é basicamente uma árvore genealogiaca de todo o site</p>
+        <input type="button" value="me aperte">
+        <h1>manipulando usando o DOM</h1>
+        <p>para realisar manipulações pelo código é preciso ter uma tag de &lt;script&gt;</p>
+        <script>
+            window.document.write('minha primeira manipulação com DOM')
+        </script>
+        <p>a frase acima não foi escrita usando html nem css, a frase foi escrita usando a manipução dom via javascript com o seguinte código</p>
+        <code style="background-color: white; color: black;">
+            &lt;script>
+                window.document.write('minha primeira manipulação com DOM')
+            &lt;/script>
+        </code>
+        <p>como podemos ver, primeiro acessamos o primeiro nivel da árvore sendo ele o window, logo em seguida acessamos o segundo nivel da árvore, nesse caso, o document.</p>
+        <p>com acesso ao document já podemos mudar coisas dentro do site via javascript</p>
+        <script>
+            window.alert('Oi!')
+        </script>
+        <h2>alertas</h2>
+        <p>você viu um alerta quando abriu essa página, esse alerta também foi feito usando manipulação DOM, com o código</p>
+       <code style="background-color: white; color: black;">
+           &lt;script>
+                window.alert('Oi!')
+           &gt;/script>
+       </code>
+       <p>o alerta foi feito usando o código acima, acessando a window e já diretamente podemos modificar coisas dentro</p>
+       <h2>Seletores</h2>
+       <p>alem de acrescentar elementos novos podemos editar os elementos já existentes </p>
+       <script>
+            var x = window.document.getElementById('principal')
+            x.style.backgroundColor='black'
+            var y= window.document.getElementsByTagName('button')[0]
+       </script>
+       <p> usando a função getElementById do javascript podemos selecionar qualquer elemento selecionando ele pela id</p>
+       <p>nesse caso vamos criar uma variável com o código <code style="display: inline-block;">"var x = window.document.getElementById('principal')".</code> </p>
+       <p>dessa forma sempre que utilizarmos a variável "x" estaremos nos referindo ao elemento com a id principal, nesse caso o elemento com a id principal é o body</p>
+       <p>a cor inicial dessa página era cinza, mas ela foi modificada usando o javascript para a aparencia de agora com o seguinte código</p>
+       <code>
+           &lt;script>
+            var x = window.document.getElementById('principal')
+            x.style.backgroundColor='black'
+            &gt;/script>
+       </code>
+       <p>também podemos selecionar elementos pelo name, e até mesmo pela tagname. <br> o que é uma tagname? é o nome das tags usadas no html como h1, p , ou button.</p>
+       <p>mas como podemos ter várias tags iguais, para selecionar especificamente devemos indicar qual o numero da tag usando o [] e começando pelo zero
+       </p>
+       <code>
+        var y= window.document.getElementsByTagName('button')[0]
+       </code>
+    </div>
+</body>
+</html>
