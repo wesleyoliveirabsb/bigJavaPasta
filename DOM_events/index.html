@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        #principal{
+            background-color: gray;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            width:50%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="principal" onclick="clicar()" onmouseenter="entrar()">
+        Essa é a minha div
+    </div>
+    <script>
+        function clicar(){
+            principal.style.background = 'blue'
+            principal.innerText = 'Agora é azul'
+            
+        }
+        function entrar(){
+            principal.style.background ='green'
+            principal.innerText = 'agora é verde'
+        }
+    </script>
+    <p>Os eventos permitem com que a partir de certas ações você ative algumas funções dentro do site, um dos eventos mais famosos é o do tipo click</p>
+    <p>
+        para inserir ele você precisa digitar dentro de alguma coisa onclick e vincular nele uma função como na div acima
+    </p>
+    <code>
+        &lt;div> id="principal" onclick="clicar()">
+        Essa é a minha div
+        &lt;/div>
+    </code>
+    <p>
+        isso vai fazer com que um click execute a função clicar, mas o que faz a função clicar?
+    </p>
+    <code>
+        function clicar(){
+            principal.style.background = 'blue'
+            principal.innerText = 'Agora é azul'
+            
+        }
+    </code>
+    <p>isso vai fazer com que ao clicar nessa div mude a cor e o texto dela. também é possivel mudar as coisas ao entrar em cotato com o mouse</p>
+    <p>isso é chamado de onmouseenter</p>
+    <p>também é necessário adicionar o parâmetro a tag da seguinte forma</p>
+    <code>
+        &lt;div> id="principal" onclick="clicar()">
+        Essa é a minha div
+        &lt;/div>
+    </code>
+    <p>e igualmente ao onclick também temos que criar uma função que faz ela funcionar (c:) </p>
+    <code>
+        function entrar(){
+            principal.style.background ='green'
+            principal.innerText = 'agora é verde'
+        }
+    </code>
+</body>
+</html>
