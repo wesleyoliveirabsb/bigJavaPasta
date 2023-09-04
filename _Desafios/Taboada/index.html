@@ -8,18 +8,22 @@
 </head>
 <body>
     <header>
-        <h1>Taboada</h1>
+        <h1>Tabuada</h1>
     </header>
     <div id="pergunta">
-        <p name="pergunta1" >Qual numero você deseja saber a taboada?
-            <input type="number" name="" id="" class="form">
+        <p name="pergunta1" >Qual numero você deseja saber a tabuada?
+            <input type="number" name="" id="numero" class="form">
         </p>
         <p name="pergunta2" >Até que número vai multiplicar?
-            <input type="number" name="" id="" class="form">
+            <input type="number" name="" id="end" class="form">
         </p>
-        <input type="submit" value="Calcular" id="resposta">
+        <input type="submit" value="Calcular" id="resposta" onclick="tabuada()">
+    </div>
+    <div id="tabuada">
         <p>Preencha os valores acima!</p>
     </div>
-    <!--<div id="resposta"></div>-->
+    <script src="tabuada.js">
+
+    </script>
 </body>
 </html>

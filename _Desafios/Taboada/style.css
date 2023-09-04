@@ -26,12 +26,14 @@ div{
     width: 25%;
     margin-bottom: 1rem;
     padding-top: 0.5rem;
+    text-indent: .5rem;
+    padding: 5px;
 }
 .form:hover{
     border: 2px solid black;
 }
 #pergunta{
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px 20px  0 0 ;
     height: 200px;
 }
 #resposta{
