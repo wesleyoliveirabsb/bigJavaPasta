@@ -1,0 +1,1 @@
+const dia = document.getElementById('dia')
