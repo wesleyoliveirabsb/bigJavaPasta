@@ -1,0 +1,45 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family: Verdana;
+}
+body{
+    width: 1728px;
+    height: 1117px;
+    background-color: aliceblue;
+}
+header{
+    background-color: #FFD900;
+    width: 100%;
+    padding: 1rem;
+}
+#description{
+    width: 50%;
+    background-color:#514988;
+    color: white;
+    font-size: 29px;
+    font-weight: 400;
+    min-height: 694px;
+    padding: 2rem;
+    text-align: center;
+}
+#description h1{
+    color: #FFD900;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+span{
+    color: white;
+    font-size: 30px;
+}
+#main{
+    display: flex;
+    flex-direction: row;
+}
+#timer{
+    display: flex;
+    flex-direction: row;
+}
