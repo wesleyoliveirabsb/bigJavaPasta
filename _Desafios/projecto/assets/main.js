@@ -1,3 +1,5 @@
+const livros = [];
+
 function checkKeyboardCode(){
     document.addEventListener('keydown',(event) => {
         var name = event.key;
@@ -47,5 +49,16 @@ function addKeyboardEventListeners(){
 },false);
 }
 
+function selectCard(selector){
+    var element = document.querySelector(selector);
+    element.classList.toggle("cardSelected");
+    if (livros.includes(selector)) livros.pop(selector);
+    else livros.push(selector);
+
+}
+
+function showSelectedBooks(){
+    if (livros.length > 0) alert ("livros selecionados:" +livros)
+}
 
 addKeyboardEventListeners();

@@ -42,8 +42,20 @@
     </div>
     <p style="color: #F3C61F; font-size: 27px;font-weight: 700; padding: 1rem; padding-left: 10rem;">AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</p>
     <aside>
-        <img src="assets/book1.svg" id="book1" ><img src="assets/book2.svg" id="book2" ><img src="assets/book3.svg" id="book3" ><img src="assets/book4.svg" id="book4">
-        <button>
+        <img src="assets/book1.svg" 
+        id="book1" 
+        onclick="selectCard('#book1')">
+        <img src="assets/book2.svg" 
+        id="book2" 
+        onclick="selectCard('#book2')">
+        <img src="assets/book3.svg" 
+        id="book3"
+        onclick="selectCard('#book3')" >
+        
+        <img src="assets/book4.svg"
+         id="book4"
+         onclick="selectCard('#book4')">
+        <button onclick="showSelectedBooks()">
             GARANTA O SEU!
         </button>
     </aside>
