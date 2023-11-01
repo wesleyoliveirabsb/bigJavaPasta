@@ -8,8 +8,10 @@ function checkKeyboardCode(){
         alert (`Tecla pressionada ${name} \r \n Key code: ${code}`);   
     },false);
 }
-
-function addKeyboardEventListeners(){
+//também é uma function só que escrita de forma diferente isso é chamado de arrow function
+addKeyboardEventListeners = () =>{
+    //para usar o addEventListener nos primeiro precisamos informar qual o evento que estamos procurando e também rpecisamos criar uma função
+    // o que fica mais fácil quando usamos a arrow function
     document.addEventListener(`keydown`,(event)=>{
     var livro1=document.getElementById("book1");
     var livro2=document.getElementById("book2");
@@ -49,7 +51,7 @@ function addKeyboardEventListeners(){
 },false);
 }
 
-function selectCard(selector){
+ selectCard = (selector) =>{
     var element = document.querySelector(selector);
     element.classList.toggle("cardSelected");
     if (livros.includes(selector)) livros.pop(selector);
@@ -57,7 +59,7 @@ function selectCard(selector){
 
 }
 
-function showSelectedBooks(){
+ showSelectedBooks = () =>{
     if (livros.length > 0) alert ("livros selecionados:" +livros)
 }
 
